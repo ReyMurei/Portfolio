@@ -3,18 +3,15 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
+  background: #e6e6e6;
   color: #333;
   height: 100vh;
-  background-image: url('your-background-image.jpg'); /* Optional: Add background image */
-  background-size: cover;
-  background-position: center;
 }
 
 /* Navigation styling */
 nav {
-  background-color: rgba(34, 34, 34, 0.8); /* Dark background with slight transparency */
-  padding: 1rem;
+  background-color: rgba(34, 34, 34, 0.85); /* Dark background with slight transparency */
+  padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -23,9 +20,9 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: flex-start;  /* Align items to the left */
+  justify-content: flex-end;  /* Right-aligned navigation */
   margin: 0;
-  padding: 0 0 0 2rem;          /* Left indent */
+  padding: 0;
 }
 
 nav li {
@@ -36,49 +33,45 @@ nav a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
   color: #00bcd4;
 }
 
-/* Section styling */
+/* Glass effect section styling */
 .section {
   padding: 4rem 2rem;
+  margin: 2rem auto;
   text-align: center;
-  display: none;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  max-width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.section.active {
-  display: block;
-}
-
-/* Home section with glass effect */
-#home {
-  background: rgba(255, 255, 255, 0.3); /* Transparent white background */
-  backdrop-filter: blur(10px); /* Apply blur to the background */
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
-  border-radius: 15px; /* Rounded corners */
-  padding: 3rem 2rem;
-  color: #fff;
-  max-width: 90%; /* Ensure it doesn't stretch too much */
-  margin: 0 auto;
-}
-
+/* Home section specific styling */
 #home h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: #222;
 }
 
 #home p {
   font-size: 1.5rem;
+  color: #333;
 }
 
-/* Other sections */
+/* Headings */
 h2, h3 {
   margin-bottom: 1rem;
+  color: #222;
 }
 
+/* Skills list */
 .skills-list {
   list-style: none;
   padding: 0;
@@ -86,4 +79,15 @@ h2, h3 {
 
 .skills-list li {
   margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+/* Contact links */
+#contact a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
 }
