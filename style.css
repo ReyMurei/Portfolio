@@ -23,9 +23,9 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;  /* Align items to the left */
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 2rem;          /* Left indent */
 }
 
 nav li {
@@ -46,6 +46,11 @@ nav a:hover {
 .section {
   padding: 4rem 2rem;
   text-align: center;
+  display: none;
+}
+
+.section.active {
+  display: block;
 }
 
 /* Home section with glass effect */
