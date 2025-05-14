@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background: #180266;
-  color: #333;
+  color: white; /* Changed to white */
   height: 100vh;
 }
 
@@ -55,6 +55,7 @@ nav a:hover {
   border-radius: 15px;
   max-width: 90%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: white; /* Changed to white */
 }
 
 /* Active section */
@@ -68,18 +69,18 @@ nav a:hover {
 #home h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #222;
+  color: white; /* Changed to white */
 }
 
 #home p {
   font-size: 1.5rem;
-  color: #333;
+  color: white; /* Changed to white */
 }
 
 /* Headings */
 h2, h3 {
   margin-bottom: 1rem;
-  color: #222;
+  color: white; /* Changed to white */
 }
 
 /* Skills list */
@@ -91,6 +92,7 @@ h2, h3 {
 .skills-list li {
   margin: 0.5rem 0;
   font-weight: 500;
+  color: white; /* Changed to white */
 }
 
 /* Contact links */
