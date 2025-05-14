@@ -24,7 +24,7 @@
   <section id="about" class="section">
     <h2>About Me</h2>
     <p>I'm Dalla, a data analyst passionate about transforming raw data into meaningful insights.</p>
-    <p>I specialize in tools like Excel, SQL, Power BI, Tableau, and Google Sheets, with a strong focus on data visualization, business intelligence, and reporting automation. My goal is to help businesses make data-driven decisions with clarity and confidence.</p>
+    <p>I specialize in tools like Excel, SQL, Power BI, Tableau, and Google Sheets, with a strong focus on data visualization, business intelligence, and reporting automation.</p>
   </section>
 
   <section id="skills" class="section">
@@ -65,11 +65,14 @@
         sections.forEach(section => {
           section.classList.remove("active");
         });
-        document.getElementById(target).classList.add("active");
+
+        const activeSection = document.getElementById(target);
+        if (activeSection) {
+          activeSection.classList.add("active");
+        }
       });
     });
   </script>
 
 </body>
 </html>
-
