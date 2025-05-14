@@ -13,18 +13,21 @@
       <li><a href="#" data-tab="home">Home</a></li>
       <li><a href="#" data-tab="about">About</a></li>
       <li><a href="#" data-tab="skills">Skills</a></li>
+      <li><a href="#" data-tab="projects">Projects</a></li>
       <li><a href="#" data-tab="contact">Contact</a></li>
     </ul>
   </nav>
 
   <section id="home" class="section active">
     <h1>Hello, I'm Dalla 👋</h1>
+    <p>Data Analyst | Excel | SQL | Power BI | Tableau</p>
+    <p>Welcome to my portfolio website!</p>
   </section>
 
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>I'm Dalla, a data analyst passionate about transforming raw data into meaningful insights.</p>
-    <p>I specialize in tools like Excel, SQL, Power BI, Tableau, and Google Sheets, with a strong focus on data visualization, business intelligence, and reporting automation.</p>
+    <p>I'm Dalla, a data analyst with a background in hospitality management and a strong passion for transforming data into actionable insights. I specialize in Excel, SQL, Power BI, Tableau, and data storytelling.</p>
+    <p>Currently undertaking a Data Analytics Certificate and continuously learning to bridge business needs with data-driven solutions.</p>
   </section>
 
   <section id="skills" class="section">
@@ -36,15 +39,15 @@
       <li>Google Sheets & Looker Studio</li>
       <li>Data Cleaning & Visualization</li>
     </ul>
+  </section>
 
-    <h3>📊 Power BI Dashboard Walkthrough</h3>
-    <iframe width="100%" height="480"
-      src="https://www.youtube.com/embed/U6cgNlMIvps"
-      title="Power BI Dashboard"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div>
+      <h3>📊 Power BI Dashboard Walkthrough</h3>
+      <p>A dynamic dashboard showcasing sales trends, peak months, and top-performing salespersons for AdventureWorks.</p>
+      <iframe width="100%" height="360" src="https://www.youtube.com/embed/U6cgNlMIvps" title="Power BI Dashboard" frameborder="0" allowfullscreen></iframe>
+    </div>
   </section>
 
   <section id="contact" class="section">
@@ -66,13 +69,11 @@
           section.classList.remove("active");
         });
 
-        const activeSection = document.getElementById(target);
-        if (activeSection) {
-          activeSection.classList.add("active");
-        }
+        document.getElementById(target).classList.add("active");
       });
     });
   </script>
 
 </body>
 </html>
+

@@ -4,13 +4,13 @@ body {
   margin: 0;
   padding: 0;
   background: #180266;
-  color: white; /* Changed to white */
+  color: white;
   height: 100vh;
 }
 
 /* Navigation styling */
 nav {
-  background-color: rgba(34, 34, 34, 0.85); /* Dark background with slight transparency */
+  background-color: rgba(34, 34, 34, 0.85);
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
@@ -20,7 +20,7 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end;  /* Right-aligned navigation */
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
 }
@@ -40,50 +40,44 @@ nav a:hover {
   color: #00bcd4;
 }
 
-/* Section base styling with glass effect */
+/* Section styling */
 .section {
-  display: none; /* Hide all sections by default */
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  display: none;
   padding: 4rem 2rem;
   margin: 2rem auto;
   text-align: center;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
   max-width: 90%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  color: white; /* Changed to white */
+  color: white;
 }
 
-/* Active section */
 .section.active {
   display: block;
-  opacity: 1;
-  transform: translateY(0);
 }
 
-/* Home section specific styling */
+/* Home */
 #home h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: white; /* Changed to white */
+  color: white;
 }
 
 #home p {
   font-size: 1.5rem;
-  color: white; /* Changed to white */
+  color: white;
 }
 
 /* Headings */
 h2, h3 {
   margin-bottom: 1rem;
-  color: white; /* Changed to white */
+  color: white;
 }
 
-/* Skills list */
+/* Skills */
 .skills-list {
   list-style: none;
   padding: 0;
@@ -92,10 +86,9 @@ h2, h3 {
 .skills-list li {
   margin: 0.5rem 0;
   font-weight: 500;
-  color: white; /* Changed to white */
 }
 
-/* Contact links */
+/* Contact */
 #contact a {
   color: #00bcd4;
   text-decoration: none;
@@ -104,3 +97,4 @@ h2, h3 {
 #contact a:hover {
   text-decoration: underline;
 }
+
